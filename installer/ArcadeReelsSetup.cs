@@ -401,7 +401,7 @@ namespace ArcadeReelsSetup
 				Write("Updating the plugin and host...");
 				if (Python("update") != 0) { Write("Update failed (see above)."); return; }
 			}
-			ConfigureReelsOnly();
+			//ConfigureReelsOnly(); Restrict to only the REELS tile and the Windows default audio output (commented out: it is not needed for the plugin to work, simply a preference for some users)
 			InstallLoader();
 			InstallCamera();
 			Write("Done. Click Launch Echo (or use the \"Echo VR (Camera)\" desktop shortcut), open the hand tablet and press the gamepad tab.");
